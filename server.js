@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const upload = require("express-fileupload");
 const s3 = require("../../config/aws_s3");
@@ -32,5 +33,5 @@ app.post("/", async (req, res) => {
   }
 });
 app.listen(8080, () => {
-  console.log("server running at 3000");
+  console.log("server running at 8080");
 });
